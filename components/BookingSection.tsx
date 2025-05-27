@@ -6,7 +6,7 @@ interface BookingSectionProps {
   id: string;
 }
 
-export default function BookingSection({ id }: BookingSectionProps): JSX.Element {
+const BookingSection = ({ id }: BookingSectionProps): JSX.Element => {
   const [serviceType, setServiceType] = useState('');
   const [date, setDate] = useState('');
   const [guests, setGuests] = useState(1);
@@ -98,4 +98,6 @@ export default function BookingSection({ id }: BookingSectionProps): JSX.Element
       </div>
     </section>
   );
-}
+};
+
+export default BookingSection;

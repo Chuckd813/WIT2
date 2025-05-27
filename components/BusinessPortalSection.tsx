@@ -6,7 +6,7 @@ interface BusinessPortalSectionProps {
   onLoginClick: () => void;
 }
 
-export default function BusinessPortalSection({ id, onLoginClick }: BusinessPortalSectionProps): JSX.Element {
+const BusinessPortalSection = ({ id, onLoginClick }: BusinessPortalSectionProps): JSX.Element => {
   const [showPricing, setShowPricing] = useState(false);
   
   // Placeholder form state
@@ -117,4 +117,6 @@ export default function BusinessPortalSection({ id, onLoginClick }: BusinessPort
       </Modal>
     </>
   );
-}
+};
+
+export default BusinessPortalSection;
